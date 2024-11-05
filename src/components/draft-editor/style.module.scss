@@ -1,0 +1,91 @@
+
+.editorWrapper {
+  border: 2px solid var(--Light-Grey, #ECEFF2);
+  background: #fff;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: Arial;
+
+  &.disabledBackground{
+    background: #f7f7f7;
+    cursor: not-allowed;
+  }
+
+  &.editorWrapperViewOnly {
+    border: none;
+    border-radius: 0;
+
+  }
+
+  .toolbar {
+    display: flex;
+    padding: 8px;
+    flex-wrap: wrap;
+
+    .item {
+      opacity: 0.5;
+      background: transparent;
+      border: none;
+      width: 30px;
+      height: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      user-select: none;
+
+      &.active {
+        opacity: 1;
+      }
+    }
+  }
+
+  .editorContainer {
+    width: 100%;
+    padding: 12px 16px;
+
+    :global .superFancyBlockquote {
+      color: #999;
+      background: #fff;
+      font-family: "Hoefler Text", Georgia, serif;
+      font-style: italic;
+      border-left: 2px solid #999;
+      padding-left: 10px;
+    }
+
+    :global .codeBlock {
+      font-family: fira-code, monospace;
+      font-size: inherit;
+      background: #ffeff0;
+      font-style: italic;
+      word-wrap: normal;
+      word-wrap: break-word;
+      box-decoration-break: slice;
+      padding: 0.3rem 2rem;
+      border-radius: 0.2rem;
+    }
+
+    :global .leftAlign {
+      text-align: left !important;
+    }
+
+    :global .rightAlign {
+      text-align: right !important;
+    }
+
+    :global .centerAlign {
+      text-align: center !important;
+    }
+
+    :global .justifyAlign {
+      text-align: justify !important;
+    }
+    :global .public-DraftStyleDefault-ltr {
+      text-align: inherit;
+    }
+
+    &.editorContainerViewOnly {
+      padding: 0;
+    }
+  }
+}

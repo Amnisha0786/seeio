@@ -1,0 +1,119 @@
+@import '../../../../../theme/variables.module';
+
+.dot {
+  border-radius: 90px;
+  width: 36px;
+  height: 36px;
+  display: inline-block;
+}
+
+.green {
+  background: #defcd9;
+}
+
+.brown {
+  background: #f5d2d2;
+}
+.orange {
+  background: #fcf0d9;
+}
+
+.page {
+  margin-top: 0px;
+  overflow: auto;
+  padding-bottom: 30px;
+  scrollbar-width: none;
+
+  .table {
+    th {
+      color: #a0a4b6 !important;
+    }
+    td {
+      color: #121212 !important;
+    }
+
+    .optionButton {
+      font-size: 25px;
+      color: $gray-text;
+    }
+  }
+
+  .textAlignRight {
+    text-align: right;
+    span {
+      margin-left: 12px;
+    }
+  }
+  .optionButton {
+    font-size: 25px;
+    color: $gray-text;
+  }
+
+  .profitLoss {
+    display: flex;
+    align-items: center;
+  }
+
+  .marginBottom15 {
+    margin-bottom: 15px;
+  }
+  .marginBottom0 {
+    margin-bottom: 0px;
+  }
+  .marginLeft5 {
+    margin-left: 5px;
+  }
+
+  .alignLeft {
+    text-align: right;
+    span {
+      margin-left: 12px;
+    }
+  }
+  .addButton {
+    margin-top: 15px;
+  }
+}
+.status {
+  width: 170px;
+}
+
+.askAiIcon {
+  position: fixed;
+  right: 32px;
+  bottom: 32px;
+}
+
+.askAiModalIcon {
+  z-index: 9999;
+}
+
+.aiBox {
+  width: 595px;
+  transition: all 0.5s;
+}
+
+.aiBoxModal {
+  width: 100%;
+  background: red;
+  transition: all 0.5s;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 10000;
+}
+
+.hideAi {
+  width: 0px;
+}
+.modal {
+  transform: translateX(0px);
+  transition: all 0.5s;
+}
+.modalactive {
+  transform: translateX(-220px);
+}
+
+.width {
+  min-width: 1000px;
+}

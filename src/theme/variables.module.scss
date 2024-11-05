@@ -1,0 +1,34 @@
+$auth-background: #eceff2;
+$dark-primary: #749715;
+$primary-color: #9ec23b;
+$gray-text: #a0a4b6;
+$dark-gray-text: #797e92;
+$red-text: #e37474;
+$link-text: #59a5ff;
+$helping-text: #005f73;
+$sidebar-color: rgba(159, 195, 60, 0.08);
+$sidebar-icon: #749715;
+$logo-color: #00293f;
+$chat-color: #6fc6a5;
+$chat-text: #005f73;
+$chat-bg-light: #f7f8f7;
+$light-primary: #cfe493;
+$search-bg-light: #ddeead;
+
+$sc-size-xxl: 1440px; // DESKTOP L
+$sc-size-xl: 1200px; // DESKTOP M
+$sc-size-lg: 992px; // TABLET L
+$sc-size-md: 768px; // TABLET M
+$sc-size-sm: 576px; // Mobile L
+$sc-size-xs: 423px; // Mobile M
+
+:export {
+  primaryColor: $primary-color;
+  grayText: $gray-text;
+}
+
+@mixin lessThan($size) {
+  @media only screen and (max-width: ($size - 1px)) {
+    @content;
+  }
+}

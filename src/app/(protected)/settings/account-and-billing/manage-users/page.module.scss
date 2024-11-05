@@ -1,0 +1,29 @@
+@import "../../../../../theme/variables.module";
+
+.page {
+  .searchInput {
+    border-radius: 25px;
+    background-color: #F1F5F9;
+    width: 350px;
+
+    > input {
+      background-color: #F1F5F9;
+    }
+
+    :global .ant-input-prefix {
+      color: #A0A4B6;
+      font-size: 20px;
+      margin-right: 10px;
+    }
+  }
+
+  .sortSelect {
+    width: 160px;
+
+    :global .ant-select-selector {
+      border-radius: 25px;
+      background-color: #F1F5F9;
+      padding: 0 20px !important;
+    }
+  }
+}

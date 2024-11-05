@@ -1,0 +1,19 @@
+@import "../../../theme/variables.module";
+
+.page {
+  display: flex;
+  flex-direction: column;
+
+  .logo {
+    align-self: center;
+    margin-bottom: 3.6rem;
+  }
+
+  .signUpLink {
+    span {
+      color: $link-text;
+      cursor: pointer;
+      user-select: none;
+    }
+  }
+}

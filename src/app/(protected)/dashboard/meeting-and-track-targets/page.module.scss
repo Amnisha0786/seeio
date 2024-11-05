@@ -1,0 +1,106 @@
+@import '../../../../theme/variables.module';
+
+.page {
+  .sortSelect {
+    width: 160px;
+
+    :global .ant-select-selector {
+      border-radius: 25px;
+      background-color: #f1f5f9;
+      padding: 0 20px !important;
+    }
+  }
+
+  .customTable {
+    padding: 32px;
+    border-radius: 16px;
+    box-shadow: 0px 0px 16px 0px #e8eaf4;
+    background-color: white;
+
+    .statusCell {
+      width: 120px;
+      justify-content: center;
+    }
+
+    .recordHeader {
+      padding: 0 32px;
+    }
+
+    .recordItem {
+      background: #f6f7fb;
+      border-radius: 15px;
+      height: 76px;
+      padding: 0 32px;
+      align-items: center;
+      display: flex;
+    }
+  }
+}
+.optionButton {
+  font-size: 20px;
+  color: $gray-text;
+}
+
+.statusWidth {
+  width: 170px;
+}
+
+.filterIcon {
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background-color: #f7f8f7;
+}
+.filterActive {
+  background-color: #cfe493;
+}
+
+.filterIconSize {
+  height: 12px !important;
+  width: 20px !important;
+}
+
+.applyBtn {
+  background: #9fc33c;
+  border-radius: 8px;
+  padding: 10px 16px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.clearBtn {
+  border: 2px solid #eceff2;
+  border-radius: 8px;
+  padding: 10px 16px;
+  color: #a0a4b6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.optionsSelect {
+  width: 250px;
+}
+
+.logItem{
+  padding: 12px 0px;
+  width: 100%;
+  background: #ffffff;
+  cursor: pointer;
+  margin-bottom: .6rem;
+  border-bottom: 1px solid #ECEFF2;
+  transition: .5s;
+}
+
+.logItem:hover{
+  opacity: .6;
+}
+
+.logModal{
+  max-height: 400px;
+  overflow-y: auto;
+}

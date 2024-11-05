@@ -1,0 +1,118 @@
+@import '../../../../theme/variables.module';
+
+.page {
+  .sortSelect {
+    width: 160px;
+
+    :global .ant-select-selector {
+      border-radius: 25px;
+      background-color: #f1f5f9;
+      padding: 0 20px !important;
+    }
+  }
+
+  .customTable {
+    padding: 32px;
+    border-radius: 16px;
+    box-shadow: 0px 0px 16px 0px #e8eaf4;
+    background-color: white;
+
+    .statusCell {
+      width: 120px;
+      justify-content: center;
+    }
+
+    .recordHeader {
+      padding: 0 32px;
+    }
+
+    .recordItem {
+      background: #f6f7fb;
+      border-radius: 15px;
+      height: 76px;
+      padding: 0 32px;
+      align-items: center;
+      display: flex;
+    }
+  }
+}
+.optionButton {
+  font-size: 20px;
+  color: $gray-text;
+}
+
+.statusWidth {
+  width: 170px;
+}
+
+.search,
+.search input {
+  border: none;
+  background-color: #f7f8f7;
+}
+
+.icon {
+  padding: 10px;
+  border-radius: 8px;
+  align-items: center;
+  justify-content: center;
+  background-color: #f7f8f7;
+  height: 43px;
+  width: 43px;
+}
+
+.settingIcon {
+  padding: 9px;
+  border: 1px solid #9fc33c;
+  border-radius: 8px;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  height: 43px;
+  width: 43px;
+}
+
+.activeFilter,
+.activeEdit {
+  background-color: #cfe493;
+  color: #749715;
+}
+
+.selectOption {
+  border: none;
+  height: 40px;
+  border-radius: 8px;
+  width: 285px;
+}
+
+.dropdownIcon {
+  cursor: pointer;
+}
+
+.searchInput {
+  border-radius: 8px;
+  background-color: #f1f5f9;
+  width: 350px;
+  border: none;
+
+  > input {
+    background-color: #f1f5f9;
+  }
+
+  :global .ant-input-prefix {
+    color: #a0a4b6;
+    font-size: 20px;
+    margin-right: 10px;
+  }
+}
+
+.sortSelect {
+  width: 160px;
+
+  :global .ant-select-selector {
+    border-radius: 8px;
+    background-color: #f1f5f9 !important;
+    padding: 0 20px !important;
+    border: none !important;
+  }
+}

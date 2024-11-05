@@ -1,0 +1,99 @@
+@import '../../../..//theme/variables.module';
+
+.bar {
+  width: 100%;
+  background: $auth-background;
+  border-radius: 20px;
+  height: 10px;
+}
+
+.barActive {
+  width: 100%;
+  background: $primary-color;
+  border-radius: 20px;
+  height: 10px;
+}
+
+.formButton {
+  height: 40px;
+  padding: 10px 24px;
+  background: $primary-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffff;
+  border-radius: 8px;
+}
+
+.formButton:hover {
+  background: $primary-color;
+  color: #ffff !important;
+}
+.inputField {
+  border: 2px solid $auth-background;
+  border-radius: 8px;
+}
+.backButton {
+  border: 1px solid $primary-color;
+  color: $primary-color;
+  background: transparent;
+}
+.backButton:hover {
+  border: 1px solid $primary-color;
+  color: $primary-color !important;
+  background: transparent;
+}
+
+.folderList {
+  height: 500px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.folder {
+  height: 54px;
+  padding: 12px 24px;
+  color: $gray-text;
+  width: 630px;
+  text-transform: capitalize;
+  position: relative;
+}
+.border {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 1px;
+  width: 100vw;
+  border-bottom: 1px solid $chat-bg-light;
+}
+
+.selectInput {
+  width: 251px;
+  height: 40px !important;
+  border: 2px solid $auth-background !important;
+  border-radius: 8px;
+
+  :global .ant-select-selector {
+    border-radius: 8px;
+    border: none !important;
+    color: #00293f !important;
+  }
+}
+
+.checkBox {
+  :global .ant-checkbox-inner {
+    height: 20px !important;
+    width: 20px !important;
+  }
+}
+
+.subBlocks {
+  margin-left: 20px;
+}
+
+.inviteBtn {
+  height: 40px;
+  border: 1px solid $primary-color;
+  border-radius: 8px;
+  color: $primary-color;
+}

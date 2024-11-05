@@ -1,0 +1,31 @@
+@import '../../../../../../../theme/variables.module';
+
+.page {
+  .sectionBox {
+    padding: 32px;
+    border-radius: 16px;
+    background-color: white;
+    flex-direction: column;
+  }
+}
+
+.addActionModal {
+  .right {
+    width: 290px;
+  }
+}
+
+.bolder {
+  font-weight: bolder;
+}
+
+.fontWeight {
+  font-weight: bold;
+}
+
+.border {
+  background-color: white;
+  border-radius: 16px;
+  padding: 28px 28px 28px 28px;
+  border: 2px solid #eff1f8;
+}

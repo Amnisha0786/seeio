@@ -1,0 +1,32 @@
+@import "../../theme/variables.module";
+
+.filePicker {
+  width: 100%;
+
+  :global .ant-upload-wrapper {
+    width: 100%;
+
+    :global .ant-upload-drag {
+      background-color: transparent;
+      border: none;
+
+      :global .ant-upload-btn {
+        padding: 0;
+      }
+    }
+  }
+
+  .uploadDrag {
+    height: 44px;
+    flex: 1;
+    border: 1px dashed $primary-color;
+    border-radius: 10px;
+  }
+
+  .uploadButton {
+    height: 44px;
+    width: 140px;
+    border: 2px solid $primary-color;
+    border-radius: 10px;
+  }
+}

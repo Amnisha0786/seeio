@@ -1,0 +1,31 @@
+@import "../../theme/variables.module";
+
+.flexBox {
+  display: flex;
+
+  @each $value in (center, flex-start, flex-end, space-between, space-around) {
+    &.justify-content-#{$value} {
+      justify-content: #{$value};
+    }
+  }
+
+  @each $value in (center, flex-start, flex-end) {
+    &.align-items-#{$value} {
+      align-items: #{$value};
+    }
+  }
+
+  @each $value in (column, column-reverse, row, row-reverse) {
+    &.flex-direction-#{$value} {
+      flex-direction: #{$value};
+    }
+  }
+}
+
+.zeroMinWidth {
+  min-width: 0;
+}
+
+.fullHeight {
+  height: 100%;
+}

@@ -1,0 +1,15 @@
+@import "../../theme/variables.module";
+
+.avatars {
+  display: flex;
+  align-items: center;
+
+  .avatar {
+    border-radius: 17px;
+    margin-left: -7px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+}

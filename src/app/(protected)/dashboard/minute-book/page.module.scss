@@ -1,0 +1,29 @@
+.page {
+  .searchInput {
+    border-radius: 8px;
+    background-color: #f1f5f9;
+    width: 350px;
+    border: none;
+
+    > input {
+      background-color: #f1f5f9;
+    }
+
+    :global .ant-input-prefix {
+      color: #A0A4B6;
+      font-size: 20px;
+      margin-right: 10px;
+    }
+  }
+
+  .sortSelect {
+    width: 160px;
+
+    :global .ant-select-selector {
+      border-radius: 8px;
+      background-color: #f1f5f9;
+      border: none;
+      padding: 0 20px !important;
+    }
+  }
+}

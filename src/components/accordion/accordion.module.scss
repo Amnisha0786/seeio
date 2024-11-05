@@ -1,0 +1,22 @@
+@import '../../theme/variables.module';
+
+.accordion {
+  background: #f6f7fb;
+  height: 40px;
+  border-radius: 15px;
+  padding: 0 2.4rem;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (min-width: '1200px') {
+  .titleWidth {
+    min-width: 300px;
+    max-width: 300px;
+  }
+  .middleTextWidth {
+    min-width: 200px;
+    max-width: 200px;
+  }
+}

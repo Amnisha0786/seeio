@@ -1,0 +1,62 @@
+.statusWidth {
+  width: 170px;
+}
+.searchIcon {
+  margin-right: 1rem;
+}
+.width10 {
+  width: 150px;
+}
+
+.searchInput {
+  border-radius: 25px;
+  background-color: #f1f5f9;
+  width: 350px;
+
+  > input {
+    background-color: #f1f5f9;
+  }
+
+  :global .ant-input-prefix {
+    color: #a0a4b6;
+    font-size: 20px;
+    margin-right: 10px;
+  }
+}
+
+.sortSelect {
+  width: 160px;
+  :global .ant-select-selector {
+    border-radius: 25px !important;
+    background-color: #f1f5f9 !important;
+    padding: 0 20px !important;
+  }
+}
+
+.filterIcon {
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background-color: #f7f8f7;
+}
+.filterActive {
+  background-color: #cfe493;
+}
+
+.filterIconSize {
+  height: 12px !important;
+  width: 20px !important;
+}
+
+.optionsSelect {
+  width: 250px;
+}
+
+.ant-tabs-nav {
+  margin: 0px !important;
+  border-bottom: none !important;
+  z-index: 2;
+}

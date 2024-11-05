@@ -1,0 +1,21 @@
+@import '../../../../../../theme/variables.module';
+
+.topBox {
+  border-radius: 16px;
+  background-color: white;
+  padding: 30px;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.size {
+  svg {
+    width: 15px;
+    height: 15px;
+  }
+  path {
+    fill: #aaa;
+  }
+}

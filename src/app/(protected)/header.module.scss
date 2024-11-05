@@ -1,0 +1,47 @@
+@import '../../theme/variables.module';
+
+.dropdown {
+  max-height: 360px !important;
+  overflow-y: auto !important;
+}
+
+.color {
+  color: #9ec23b !important;
+}
+
+.header {
+  height: 9.6rem;
+  background-color: white;
+  padding: 2.6rem 3.2rem;
+  display: flex;
+  justify-content: flex-end;
+  border-bottom: 1px solid #dde1e6;
+
+  .image {
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+  }
+
+  .companyName {
+    color: $primary-color;
+    position: absolute;
+    top: 43px;
+    left: 300px;
+    display: flex;
+    align-items: center;
+  }
+
+  .button {
+    display: flex;
+    align-items: center;
+
+    > * {
+      margin-right: 8px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}

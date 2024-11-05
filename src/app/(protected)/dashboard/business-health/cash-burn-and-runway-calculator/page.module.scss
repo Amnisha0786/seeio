@@ -1,0 +1,78 @@
+@import '../../../../../theme/variables.module';
+
+.xeroContainer {
+  max-width: 1200px !important;
+}
+
+.card {
+  width: 380px;
+  height: 300px;
+  border-radius: 16px;
+  box-shadow: 0px 0px 16px 0px #687a3421;
+  padding: 20px 10px;
+  background: #ffff;
+
+  .title {
+    font-weight: 400;
+  }
+}
+
+.chart {
+  display: flex;
+  align-items: center;
+  canvas {
+    width: 100% !important;
+  }
+}
+
+.width {
+  width: 150px;
+}
+
+.addBtn {
+  height: 40px;
+  box-shadow: 0px 4px 4px 0px #0000000f;
+}
+
+.icons {
+  padding: 10px;
+  height: 45px;
+  width: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background-color: #ffffff;
+  border: 1px solid #eceff2;
+}
+
+.header {
+  width: 100%;
+}
+
+.optionButton {
+  margin-left: 5px;
+  font-size: 25px;
+  color: $gray-text;
+}
+
+.info {
+  width: 146px;
+}
+
+.hoverItem {
+  cursor: pointer;
+  width: inherit;
+  background: white;
+  height: inherit;
+}
+.hoverItem:hover {
+  padding: 10px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.contentBody {
+  padding: 32px;
+  background-color: white;
+  box-shadow: 0px 0px 16px 0px #e8eaf4;
+  border-radius: 16px;
+}

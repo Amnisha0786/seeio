@@ -1,0 +1,18 @@
+@import '../../theme/variables.module';
+
+.layout {
+  background-color: $auth-background;
+  width: 100%;
+  display: block;
+  padding: 50px 0;
+  overflow: auto;
+  height: 100%;
+  .authBox {
+    width: 57rem;
+    border-radius: 1.6rem;
+    background-color: white;
+    padding: 3.2rem 5.2rem 11.1rem;
+    margin: auto;
+  }
+}
+

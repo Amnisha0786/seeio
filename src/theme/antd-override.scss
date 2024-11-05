@@ -1,0 +1,67 @@
+@import './variables.module';
+
+.ant-input[readonly] {
+  background-color: #eceff2;
+  border-color: #eceff2;
+
+  &:focus {
+    box-shadow: none;
+  }
+}
+
+.ant-select-multiple.ant-select-lg .ant-select-selector {
+  &:after {
+    line-height: 33px;
+  }
+}
+
+.ant-select-multiple.ant-select-lg .ant-select-selection-item {
+  height: 33px;
+  line-height: 32px;
+}
+
+.meeting_table .ant-tabs-nav {
+  margin: 0px 0px !important;
+  border-bottom: none !important;
+  z-index: 2;
+}
+
+.riskMeetingTable {
+  border-top-left-radius: 0px !important;
+  border-top-right-radius: 0px !important;
+}
+
+.summaryTabs
+  .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled) {
+  background-color: $chat-bg-light !important;
+  border-color: $auth-background !important;
+  color: $helping-text !important;
+}
+.summaryTabs
+  .ant-radio-button-wrapper-checked:not(
+    .ant-radio-button-wrapper-disabled
+  ):hover {
+  background-color: $chat-bg-light !important;
+  border-color: $auth-background !important;
+  color: $helping-text !important;
+}
+.summaryTabs .ant-radio-button-wrapper {
+  background-color: transparent !important;
+  border-color: $auth-background !important;
+}
+.summaryTabs .ant-radio-button-wrapper:hover {
+  color: $helping-text !important;
+  background-color: transparent !important;
+}
+.summaryTabs .ant-radio-button-wrapper-checked::before {
+  background-color: transparent !important;
+}
+
+.customPeopleSelect .ant-col {
+  padding: 0px !important;
+}
+
+.ant-modal-wrap,
+.ant-modal-centered {
+  overflow: auto !important;
+}

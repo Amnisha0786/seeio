@@ -1,0 +1,132 @@
+@import '../../../theme/variables.module';
+
+.authBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+
+  .logo {
+    align-self: center;
+    margin-bottom: 1.6rem;
+    width: 200px;
+    height: 90px;
+  }
+
+  .inputGroup {
+    display: flex;
+
+    > * {
+      margin-right: 2.4rem;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .divider {
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+    .line {
+      height: 1px;
+      background-color: $gray-text;
+      width: 100%;
+      position: absolute;
+      top: 8px;
+    }
+
+    p {
+      background-color: white;
+      position: relative;
+      padding: 0 32px;
+    }
+  }
+
+  .iconButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    > img {
+      margin-right: 20px;
+    }
+  }
+
+  .checkboxBox {
+    display: flex;
+    align-items: flex-start;
+
+    .ant-checkbox-wrapper {
+      //margin-right: 10px;
+    }
+
+    :last-child {
+      flex: 1;
+    }
+  }
+
+  .hightlightLink {
+    span {
+      color: $link-text;
+      cursor: pointer;
+      user-select: none;
+    }
+  }
+
+  .cursor {
+    cursor: pointer;
+  }
+
+  .size {
+    svg {
+      width: 15px;
+      height: 15px;
+    }
+    path {
+      fill: #aaa;
+    }
+  }
+
+  .qrBox {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.SMSBtn {
+  width: 100%;
+  background-color: transparent;
+  color: $primary-color;
+  box-shadow: none;
+  border: 2px solid $primary-color;
+}
+
+.bolder {
+  font-weight: 600;
+}
+
+.otpInput {
+  width: 40px;
+  height: 60px;
+  border: 2px solid #eceff2;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 32px;
+  color: #a0a4b6;
+  line-height: 1;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.otpInput:focus {
+  border-color: $primary-color;
+}

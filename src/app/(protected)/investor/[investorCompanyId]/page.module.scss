@@ -1,0 +1,94 @@
+@import "../../../../theme/variables.module.scss";
+
+.page {
+  .xeroContainer {
+    max-width: 1200px !important;
+  }
+  
+  .breadcrumbs {
+    border-radius: 5px;
+    padding: 1.25rem;
+    background: #fff;
+    display: inline-block;
+  }
+  .nextDate {
+    border-radius: 5px;
+    padding: 1rem;
+    background: #fff;
+    display: inline-block;
+  }
+  .textColor {
+    color: black;
+  }
+  .bolder {
+    font-weight: bold;
+  }
+  .cardWidth {
+    flex: 1;
+    display: flex;
+
+    > * {
+      flex: 1;
+    }
+  }
+  .card {
+    flex: 1;
+    display: flex;
+
+    > * {
+      flex: 1;
+    }
+    width: 100%;
+    border-radius: 16px;
+    min-height: 230px;
+    .width {
+      width: 100%;
+    }
+    .border {
+      border: 1px solid #9fc33c;
+      width: 100%;
+      font-weight: 500;
+      color: #9fc33c;
+      text-align: center;
+      border-radius: 8px;
+      padding: 10px 20px;
+    }
+
+    .pieChart {
+      width: 152px;
+      height: 152px;
+    }
+    .green {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #9fc33c;
+    }
+    .amber {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #6fc6a5;
+    }
+    .red {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #ef3d4e;
+    }
+  }
+}
+.textSize {
+  font-size: 44px;
+  font-weight: 600;
+  color: #eceff2;
+}
+
+.noRecord{
+  height: 280px;
+  width: 385px;
+  background-color: white;
+  box-shadow: 0px 0px 16px 0px #e8eaf4;
+  border-radius: 16px;
+  padding: 32px;
+}

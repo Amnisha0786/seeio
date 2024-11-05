@@ -1,0 +1,40 @@
+@import '../../../../../../../theme/variables.module';
+
+.page {
+  background-color: white;
+  border-radius: 16px;
+  padding: 32px;
+}
+
+.border {
+  background-color: white;
+  border-radius: 16px;
+  padding: 32px;
+  border: 2px solid #eff1f8;
+}
+
+.padding{
+  background-color: white;
+  border-radius: 16px;
+  border: 2px solid #eff1f8;
+  padding: 20px;
+}
+
+.bolder {
+  font-weight: bolder;
+}
+
+.neutral {
+  background-color: transparent;
+  height: 40px;
+  border-radius: 15px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.deleteIcon {
+  path {
+    fill: red;
+  }
+}

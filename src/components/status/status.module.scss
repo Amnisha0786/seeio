@@ -1,0 +1,31 @@
+@import '../../theme/variables.module';
+
+.status {
+  height: 36px;
+  padding: 0 15px;
+  border-radius: 18px;
+
+  &.green {
+    background-color: #defcd9;
+    color: #49944c;
+  }
+
+  &.white {
+    background-color: #ffff;
+    color: $logo-color;
+  }
+
+  &.yellow {
+    background-color: #fcf0d9;
+    color: #ce9f46;
+  }
+
+  &.red {
+    background-color: #f5d2d2;
+    color: #a02828;
+  }
+}
+
+.boxShadow {
+  box-shadow: 0px 0px 1px gray;
+}

@@ -1,0 +1,62 @@
+@import '../../../theme/variables.module';
+
+.page {
+  .size {
+    svg {
+      width: 15px;
+      height: 15px;
+    }
+    path {
+      fill: #aaa;
+    }
+  }
+
+  .card {
+    flex: 1;
+    display: flex;
+
+    > * {
+      flex: 1;
+    }
+
+    &:first-child {
+      flex: 1.35;
+    }
+
+    .pieChart {
+      width: 180px;
+      height: 180px;
+    }
+
+    .green {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #9fc33c;
+    }
+    .amber {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #6fc6a5;
+    }
+    .red {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #ef3d4e;
+    }
+  }
+
+  .statusWidth {
+    width: 170px;
+  }
+}
+
+.riskScore {
+  text-align: center;
+}
+
+.flexGrow {
+  flex-grow: 1;
+}

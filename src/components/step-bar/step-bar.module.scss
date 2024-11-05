@@ -1,0 +1,55 @@
+@import "../../theme/variables.module";
+
+.stepBar {
+  .stepBarItem {
+    position: relative;
+
+    .circle {
+      width: 32px;
+      height: 32px;
+      border-radius: 16px;
+      border: 6px solid #E5E7F1;
+
+      .tickIcon {
+        display: none;
+      }
+    }
+
+    .progressLine {
+      position: absolute;
+      bottom: 14px;
+      left: 38px;
+      right: 8px;
+      height: 3px;
+      background-color: #E5E7F1;
+      border-radius: 2px;
+    }
+
+    .titleBox {
+      opacity: 0.3;
+    }
+
+    &.behind {
+      .circle {
+        .tickIcon {
+          display: block;
+        }
+      }
+
+      .progressLine {
+        background-color: $primary-color;
+      }
+    }
+
+    &.active {
+      .circle {
+        background-color: $primary-color;
+        border: 6px solid $primary-color;
+      }
+
+      .titleBox {
+        opacity: 1;
+      }
+    }
+  }
+}

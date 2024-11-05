@@ -1,0 +1,242 @@
+@import '../../theme/variables.module';
+
+.sideBar {
+  width: 25.6rem;
+  background-color: $sidebar-color;
+  padding: 2.4rem 1.6rem;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid #dde1e6;
+  justify-content: space-between;
+  transition: all 0.5s;
+
+  .logo {
+    height: 37px;
+    align-self: center;
+  }
+
+  .searchIcon {
+    path {
+      fill: $sidebar-icon;
+    }
+  }
+
+  .searchBox {
+    border-radius: 8px;
+    background-color: $search-bg-light;
+    border: none;
+   
+    > input {
+      background-color: transparent;
+      color: $sidebar-icon;
+    }
+
+    > ::placeholder {
+      color: $sidebar-icon;
+    }
+
+    :global .ant-input-prefix {
+      font-size: 20px;
+      margin-right: 10px;
+    }
+  }
+   .searchBox:focus-within{
+    background-color: $light-primary;
+   }
+  .menuBox {
+    .menuDropDown{
+      background: #fff;
+      border-radius: 8px;
+    }
+    .menuItemOuter {
+      border-bottom: 1px solid #e9f5ed;
+      transition: all .5s;
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      .menuItem {
+        display: flex;
+        height: 48px;
+        display: flex;
+        align-items: center;
+        padding: 0 8px;
+        transition: background-color 0.2s;
+
+        .menuItemLeft {
+          display: flex;
+          align-items: center;
+          flex: 1;
+          height: 100%;
+
+          .menuItemTitle {
+            color: $sidebar-icon;
+          }
+        }
+        .menuItemLeft {
+          .menuItemIcon {
+            width: 24px;
+            height: 24px;
+
+            path {
+              fill: $sidebar-icon;
+            }
+          }
+        }
+
+        &.active {
+          border-radius: 8px;
+          background-color: #fff;
+          .openButton {
+            path {
+              fill: $logo-color;
+            }
+          }
+
+          .menuItemLeft {
+            .menuItemIcon {
+              opacity: 1;
+              width: 24px;
+              height: 24px;
+
+              path {
+                fill: $logo-color;
+              }
+            }
+
+            .menuItemTitle {
+              color: $logo-color;
+            }
+          }
+        }
+
+        .openButton {
+          transition: transform 0.2s;
+          path {
+            fill: $sidebar-icon;
+          }
+
+          &.reverse {
+            transform: rotate(180deg);
+          }
+        }
+      }
+
+      .colapse {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s;
+
+        &.open {
+          max-height: 240px;
+        }
+
+        .menuSubItem {
+          display: flex;
+          height: 48px;
+          display: flex;
+          align-items: center;
+          margin-left: 30px;
+          transition: background-color 0.2s;
+          padding: 0 10px;
+          position: relative;
+
+          .menuSubItemTitle {
+            color: $sidebar-icon;
+          }
+
+          &::before {
+            position: absolute;
+            content: '';
+            height: 100%;
+            width: 8px;
+            border-top-left-radius: 8px;
+            border-bottom-left-radius: 8px;
+            left: -4px;
+            transition: background-color 0.2s;
+          }
+
+          &.active {
+            background: #fff;
+
+            .menuSubItemTitle {
+              color: $logo-color;
+            }
+
+            &::before {
+              background-color: #6fc6a5;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .chatButton {
+    position: relative;
+    margin: auto;
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .aiButton {
+    border: none;
+    border-radius: 8px;
+    padding: 0px 24px;
+    margin-right: 7px;
+    max-height: 39px;
+    color: $chat-text;
+    &:hover {
+      color: $chat-color !important;
+    }
+  }
+}
+.collapseMenu {
+  width: 72px;
+  background: white;
+  .logo {
+    display: none;
+  }
+  .menuItemTitle {
+    display: none;
+  }
+  .openButton {
+    display: none;
+  }
+  .colapse {
+    display: none;
+  }
+  .searchBox {
+    display: none;
+  }
+}
+.drawerIcon {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+}
+.test {
+  position: relative;
+  bottom: 10px;
+  width: 100%;
+  .bgImage {
+    position: relative !important;
+  }
+}
+
+.buttonContent {
+  width: 100%;
+  position: absolute;
+  top: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.askAiIcon {
+  position: absolute;
+  right: 32px;
+  bottom: 90px;
+}

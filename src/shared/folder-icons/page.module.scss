@@ -1,0 +1,25 @@
+@import '../../theme/variables.module';
+
+.roomBox {
+  box-shadow: 0px 0px 16px 0px #e8eaf4;
+  background-color: white;
+  padding: 24px 24px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  color: #000;
+  max-height: 157px;
+
+  &:hover {
+    color: #000;
+  }
+
+  .statusBox {
+    min-width: 120px;
+  }
+
+  .optionButton {
+    font-size: 25px;
+    color: $gray-text;
+  }
+}

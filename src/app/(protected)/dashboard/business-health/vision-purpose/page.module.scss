@@ -1,0 +1,44 @@
+.card {
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: 0px 0px 16px 0px #e8eaf4;
+  padding: 2.4rem 2rem;
+}
+
+.saveButton {
+  width: 12.75rem;
+  text-align: center;
+}
+
+.cancelButton {
+  margin-right: 10px;
+}
+
+.text {
+  color: #121212;
+  font-family: var(--font-inter);
+  font-weight: 400;
+}
+
+.fullWidth {
+  width: 100%;
+}
+
+.textarea {
+  resize: none !important;
+}
+
+.askAiIcon {
+  position: fixed;
+  right: 32px;
+  bottom: 32px;
+}
+
+.aiBox {
+  width: 595px;
+  transition: all 0.5s;
+}
+
+.hideAi {
+  width: 0px;
+}

@@ -1,0 +1,27 @@
+.table {
+  .searchInput {
+    border-radius: 25px;
+    background-color: #f1f5f9;
+    width: 350px;
+
+    > input {
+      background-color: #f1f5f9;
+    }
+
+    :global .ant-input-prefix {
+      color: #a0a4b6;
+      font-size: 20px;
+      margin-right: 10px;
+    }
+  }
+
+  .sortSelect {
+    width: 160px;
+
+    :global .ant-select-selector {
+      border-radius: 25px;
+      background-color: #f1f5f9;
+      padding: 0 20px !important;
+    }
+  }
+}

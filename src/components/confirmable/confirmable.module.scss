@@ -1,0 +1,42 @@
+@import "../../theme/variables.module";
+
+.confirmable {
+  width: 400px!important;
+
+  .content {
+    word-break: break-all;
+  }
+
+  .ant-modal-content {
+    border-radius: 6px;
+
+    .ant-modal-close {
+      display: none;
+    }
+
+    .ant-modal-body {
+      padding: 0;
+
+      .modal-content {
+        .body {
+          padding: 20px;
+
+          .action-box {
+            padding-top: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .action-button {
+              margin-right: 15px;
+
+              &:last-child {
+                margin-right: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

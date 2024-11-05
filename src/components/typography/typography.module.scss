@@ -1,0 +1,110 @@
+@import '../../theme/variables.module';
+
+.typography {
+  font-size: 1.4rem;
+  letter-spacing: -0.03em;
+
+  &.tiny {
+    font-size: 1rem;
+  }
+
+  &.small {
+    font-size: 1.2rem;
+  }
+
+  &.medium {
+    font-size: 1.4rem;
+  }
+
+  &.large {
+    font-size: 1.6rem;
+  }
+
+  &.extraLarge {
+    font-size: 2.8rem;
+  }
+
+  &.big {
+    font-size: 1.8rem;
+  }
+
+  &.huge {
+    font-size: 2rem;
+  }
+
+  &.giant {
+    font-size: 2.4rem;
+  }
+
+  &.enormous {
+    font-size: 3.2rem;
+  }
+
+  &.link {
+    cursor: pointer;
+    user-select: none;
+    color: $link-text;
+  }
+
+  &.underline {
+    text-decoration: underline;
+  }
+
+  &.capitalize {
+    text-transform: capitalize;
+  }
+
+  &.light {
+    color: white;
+  }
+
+  &.gray {
+    color: $gray-text;
+  }
+
+  &.darkgray {
+    color: $gray-text;
+  }
+
+  &.red {
+    color: $red-text;
+  }
+
+  &.blue {
+    color: $helping-text;
+  }
+
+  &.darkBlue {
+    color: #00293F;
+  }
+
+  &.primary {
+    color: $primary-color;
+  }
+
+  &.center {
+    text-align: center;
+  }
+
+  &.bold {
+    font-weight: bold;
+  }
+
+  &.roboto {
+    font-family: 'Roboto Serif', serif;
+  }
+
+  &.serif {
+    font-family: sans-serif;
+  }
+
+  &.ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &.clickable {
+    cursor: pointer;
+  }
+}

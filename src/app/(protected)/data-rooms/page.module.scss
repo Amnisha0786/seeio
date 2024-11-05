@@ -1,0 +1,66 @@
+@import '../../../theme/variables.module';
+
+.page {
+  .roomBox {
+    box-shadow: 0px 0px 16px 0px #e8eaf4;
+    background-color: white;
+    padding: 32px 24px;
+    border-radius: 16px;
+    display: flex;
+    height: 210px;
+    flex-direction: column;
+
+    .optionButton {
+      font-size: 25px;
+      color: #a0a4b6;
+    }
+
+    .statusBox {
+      width: 128px;
+      height: 36px;
+      background-color: #defcd9;
+      border-radius: 18px;
+      color: #49944c;
+    }
+  }
+}
+
+.companySwitch {
+  .image {
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+  }
+
+  .button {
+    display: flex;
+    align-items: center;
+
+    > * {
+      margin-right: 8px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.addButton {
+  border: 2px dashed #a0a4b6;
+  height: 210px;
+  padding: 48px 0;
+  border-radius: 8px;
+}
+
+.pointerEvent {
+  pointer-events: none !important;
+  opacity: 60%;
+}
+
+.noRecords {
+  background: #fff;
+  box-shadow: 0px 0px 16px 0px #e8eaf4;
+  border-radius: 8px;
+  min-height: 500px;
+}

@@ -1,0 +1,11 @@
+@import '../../../../../../theme/variables.module';
+
+.page {
+  background-color: white;
+  border-radius: 16px;
+  padding: 32px;
+}
+.optionButton {
+  font-size: 20px;
+  color: $gray-text;
+}

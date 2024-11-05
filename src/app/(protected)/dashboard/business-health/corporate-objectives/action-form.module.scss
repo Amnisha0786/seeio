@@ -1,0 +1,55 @@
+@import '../../../../../theme/variables.module';
+
+.setupACompanyModal {
+  padding: 0 0rem 0;
+}
+
+.fullWidth {
+  width: 100%;
+}
+
+.addKeyIndicator {
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: 0px 0px 16px 0px #e8eaf4;
+  padding: 2.4rem 2rem;
+}
+.buttonFinish {
+  text-align: right;
+}
+.saveButtonAndFinish {
+  background-color: transparent;
+  margin-right: 15px;
+  color: $primary-color;
+  box-shadow: none;
+  border: 2px solid $primary-color;
+}
+
+.spaceIcon {
+  margin-right: 10px;
+}
+
+.status {
+  width: 170px;
+}
+
+.headingStyle {
+  font-weight: bold;
+  font-size: 1.6rem;
+  color: $helping-text;
+}
+
+.modal {
+  transform: translateX(0px);
+  transition: all 0.5s;
+}
+
+.modalactive {
+  transform: translateX(-220px);
+}
+
+.helpIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

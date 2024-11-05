@@ -1,0 +1,189 @@
+@import '../../../../theme/variables.module';
+
+.page {
+  .optionButton {
+    font-size: 25px;
+    color: #a0a4b6;
+  }
+
+  .searchInput {
+    border-radius: 8px;
+    border: none !important;
+    background-color: #f7f8f7;
+    width: 350px;
+    height: 40px;
+
+    > input {
+      background-color: #f7f8f7;
+      color: #a0a4b6;
+    }
+
+    :global .ant-input-prefix {
+      color: #a0a4b6;
+      font-size: 14px;
+      margin-right: 10px;
+    }
+  }
+
+  :global .ant-table-row-expand-icon {
+    border: none;
+    background: transparent;
+  }
+  :global .ant-table-row-expand-icon:before {
+    background: #a0a4b6;
+    height: 2px;
+    border-radius: 2px;
+    left: 10px;
+    width: 10px;
+    transform: rotate(-130deg);
+  }
+  :global .ant-table-row-expand-icon:after {
+    background: #a0a4b6;
+    width: 2px;
+    border-radius: 2px;
+    top: 6px;
+    left: 8px;
+    height: 10px;
+    transform: rotate(-135deg);
+  }
+  :global .ant-table-row-expand-icon-collapsed {
+    border: none;
+    background: transparent;
+  }
+  :global .ant-table-row-expand-icon-collapsed:before {
+    background: #a0a4b6;
+    height: 2px;
+    border-radius: 2px;
+    left: 10px;
+    width: 10px;
+    transform: rotate(141deg);
+  }
+  :global .ant-table-row-expand-icon-collapsed:after {
+    background: #a0a4b6;
+    width: 2px;
+    border-radius: 2px;
+    top: 6px;
+    left: 8px;
+    height: 10px;
+    transform: rotate(135deg);
+  }
+}
+
+.iconStyles {
+  height: 40px;
+  width: 40px;
+  border-radius: 8px;
+  background-color: #f7f8f7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.headerBar {
+  justify-content: space-between;
+}
+.heading {
+  width: 65px;
+}
+.barStyle {
+  margin-top: 20px;
+}
+.progressBar {
+  position: relative;
+  width: 100%;
+  background: #eceff2;
+  height: 10px;
+  border-radius: 8px;
+}
+.innerProgressBar {
+  transition: all 0.5s;
+  position: absolute;
+  height: 10px;
+  background: #ffe2aa;
+  border-radius: 8px;
+  &.green {
+    background-color: #defcd9;
+    color: #49944c;
+  }
+
+  &.white {
+    background-color: #dee0e1;
+    color: $logo-color;
+  }
+
+  &.yellow {
+    background-color: #fcf0d9;
+    color: #ce9f46;
+  }
+
+  &.red {
+    background-color: #f5d2d2;
+    color: #a02828;
+  }
+}
+
+.tableBody {
+  box-shadow: 0px 0px 16px 0px #e8eaf4;
+  background-color: white;
+  border-radius: 16px;
+  padding: 20px 30px;
+}
+
+.columns {
+  width: 100%;
+}
+
+.checkBox {
+  :global .ant-checkbox-inner {
+    height: 20px !important;
+    width: 20px !important;
+  }
+}
+
+.table {
+  width: 100%;
+}
+
+.header {
+  border-bottom: 1px solid $chat-bg-light;
+  padding-bottom: 20px;
+  width: 100%;
+}
+
+.statusBatch {
+  width: 107px;
+  height: 32px;
+  border-radius: 20px;
+  padding: 8px 12px;
+  background: #ffe2aa99;
+  color: #ce9f46;
+}
+
+.accessButton {
+  height: 40px;
+  border-radius: 8px;
+  border: 1px solid #9fc33c;
+  color: #9fc33c;
+  background: transparent;
+}
+
+.isvisible {
+  pointer-events: none;
+  opacity: 40%;
+}
+
+.view {
+  pointer-events: none;
+}
+
+.activeText {
+  color: #749715;
+}
+
+.view {
+  pointer-events: none;
+}
+
+.activeText{
+  color: #749715;
+}

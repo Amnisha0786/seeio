@@ -1,0 +1,8 @@
+@import "../../theme/variables.module";
+
+.modal {
+  :global .ant-modal-content {
+    border-radius: 16px;
+    padding: 3.2rem;
+  }
+}

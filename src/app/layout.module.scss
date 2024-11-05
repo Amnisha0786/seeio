@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif&display=swap');
+
+@import "../theme/variables.module";
+
+.html {
+  width: 100%;
+  height: 100%;
+  font-size: 10px;
+
+  div {
+    box-sizing: border-box;
+  }
+
+  @include lessThan($sc-size-xxl) {
+    font-size: 9px;
+  }
+
+  @include lessThan($sc-size-sm) {
+    font-size: 8px;
+  }
+}
+
+.body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+  overflow: auto;
+
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    margin: 0;
+  }
+}
+
+.preloading {
+  background: white;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  opacity: 1;
+  transition: opacity 0.3s;
+
+  .circle {
+    position: relative;
+    width: 60px;
+    height: 60px;
+
+    &::after {
+      content: "";
+      background-color: $primary-color;
+      border-radius: 50%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      animation: rotate 2s infinite;
+    }
+
+    &::before {
+      content: "";
+      background-color: $primary-color;
+      opacity: 0.5;
+      border-radius: 50%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      animation: revert-rotate 2s infinite;
+    }
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: scale(0.5) rotate(0deg);
+    border-radius: 50%;
+  }
+
+  50% {
+    transform: scale(1.5) rotate(180deg);
+    border-radius: 5%;
+  }
+
+  100% {
+    transform: scale(0.5) rotate(360deg);
+    border-radius: 50%;
+  }
+}
+
+@keyframes revert-rotate {
+  0% {
+    transform: scale(1) rotate(0deg);
+    border-radius: 50%;
+  }
+
+  50% {
+    transform: scale(1.2) rotate(180deg);
+    border-radius: 5%;
+  }
+
+  100% {
+    transform: scale(1) rotate(360deg);
+    border-radius: 50%;
+  }
+}

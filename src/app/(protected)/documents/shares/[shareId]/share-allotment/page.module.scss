@@ -1,0 +1,64 @@
+@import "../../../../../../theme/variables.module";
+
+.page {
+  .searchInput {
+    border-radius: 8px;
+    background-color: #f1f5f9;
+    width: 350px;
+    border: none;
+
+    > input {
+      background-color: #f1f5f9;
+    }
+
+    :global .ant-input-prefix {
+      color: #a0a4b6;
+      font-size: 20px;
+      margin-right: 10px;
+    }
+  }
+
+  .sortSelect {
+    width: 160px;
+
+    :global .ant-select-selector {
+      border-radius: 8px;
+      background-color: #f1f5f9;
+      border: none;
+      padding: 0 20px !important;
+    }
+  }
+}
+
+.infoBox {
+  padding: 24px 32px;
+  border-radius: 16px;
+  background-color: white;
+}
+
+.fontSize {
+  font-size: 1.6rem;
+}
+
+.previewBox {
+  background-color: white;
+  border-radius: 16px;
+  padding: 44px 90px;
+}
+
+.content {
+  width: 80%;
+}
+
+.statusWidth {
+  width: 135px;
+}
+
+.halfWidth {
+  width: 50%;
+  button {
+    color: $primary-color;
+    min-width: 160px;
+    border-radius: 10px;
+  }
+}

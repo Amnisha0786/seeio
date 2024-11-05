@@ -1,0 +1,50 @@
+.title {
+  gap: 1rem;
+  margin-top: 30px;
+
+  name {
+    font-weight: 600;
+  }
+}
+
+.absolute {
+  position: absolute;
+  top: 11rem;
+  right: 20px;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.dot {
+  border-radius: 90px;
+  width: 36px;
+  height: 36px;
+  display: inline-block;
+}
+
+.green {
+  background: #defcd9;
+}
+
+.brown {
+  background: #f5d2d2;
+}
+.orange {
+  background: #fcf0d9;
+}
+
+.page {
+  overflow: auto;
+  padding-bottom: 30px;
+}
+
+.table {
+  th {
+    color: #a0a4b6 !important;
+  }
+  td {
+    color: #121212 !important;
+  }
+}

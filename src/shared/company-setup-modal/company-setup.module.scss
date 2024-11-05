@@ -1,0 +1,48 @@
+.setupModal {
+  width: 100vw !important;
+  max-width: 100%;
+  :global .ant-modal-content {
+    border-radius: 0px;
+  }
+}
+.size {
+  height: 100vh;
+  text-align: center;
+  margin: auto;
+  padding: 60px 125px;
+}
+
+.bolder {
+  font-weight: bolder;
+}
+
+.bold {
+  font-weight: bold;
+  text-align: left;
+}
+
+.padding {
+  padding: 30px 50px !important;
+}
+
+.margin {
+  margin: 10px 0px !important;
+}
+
+.width {
+  text-align: left;
+  width: 50%;
+}
+.btn {
+  position: absolute;
+  right: 10%;
+  top: 5%;
+}
+
+.border {
+  border: none;
+  color: red;
+  &:hover {
+    color: rgba(249, 38, 38, 0.845) !important;
+  }
+}

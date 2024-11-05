@@ -1,0 +1,76 @@
+@import "../../theme/variables.module";
+
+.chart {
+  width: 200px;
+  height: 100px;
+  position: relative;
+
+  .circleOuter {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+    .circle {
+      width: 100%;
+      border-radius: 50%;
+      height: 200%;
+      background-image: linear-gradient(to right, #005F73, #9FC33C3D);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &.circleRed {
+        background-image: linear-gradient(to right, #e10202, #ffa7a7);
+      }
+
+      &.circleOrange {
+        background-image: linear-gradient(to right, #f39d00, #ffe0b3);
+      }
+
+      .circleMask {
+        width: 82%;
+        border-radius: 50%;
+        height: 82%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: white;
+
+        .innerCircle {
+          width: 45px;
+          height: 45px;
+          background: #D7D8DF;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+
+  .needleOuter {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    background: #ECEFF2;
+    width: 18px;
+    height: 18px;
+    transform: translate(-50%, 50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+
+    .needleRotate {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      justify-content: center;
+
+      .needle {
+        width: 10px;
+        height: 100px;
+        background: #ECEFF2;
+        border-radius: 5px;
+      }
+    }
+  }
+}

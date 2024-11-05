@@ -1,0 +1,236 @@
+@import '../../theme/variables.module';
+
+.modal {
+  padding: 0px !important;
+  width: 30%;
+  height: calc(100vh - 9.6rem);
+  background: #ffffff;
+  z-index: 1;
+  position: absolute;
+  right: 0;
+  box-shadow: 0px 0px 16px 0px #687a3421;
+  transition: all 0.5s;
+
+  .header {
+    width: 100%;
+    color: $chat-text;
+    border-bottom: 1px solid #eceff2;
+    padding: 20px 24px;
+    height: 76px;
+    font-size: 20px !important;
+  }
+  :global .ant-modal-content {
+    padding: 0px !important;
+  }
+
+  .message {
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+    max-width: 80%;
+  }
+
+  .risk-card {
+    padding: 10px;
+    width: 50%;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: #f9f9f9;
+  }
+
+  .assistantMessage {
+    background-color: $chat-bg-light;
+    text-align: left;
+    align-self: flex-start;
+    color: $logo-color;
+    border-radius: 14px 14px 14px 2px;
+    max-width: '50%';
+  }
+
+  .typography {
+    font-size: 18px;
+  }
+
+  .userMessage {
+    background-color: $chat-color;
+    color: $logo-color;
+    text-align: right;
+    align-self: flex-end;
+    font-size: 14px;
+    border-radius: 14px 14px 2px 14px;
+    max-width: '80%';
+  }
+
+  .chatInput {
+    padding-right: 40px !important;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    height: 100px;
+    resize: none;
+    scrollbar-width: none;
+  }
+
+  .relative {
+    position: relative;
+    width: 100%;
+  }
+
+  .submitBtn {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    z-index: 1000;
+  }
+
+  .files {
+    background: $primary-color;
+    border-radius: 50%;
+    color: white;
+    height: 24px;
+    width: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: auto;
+  }
+
+  .fileBadge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+    height: 12px;
+    width: 24px;
+    :global .ant-badge-count {
+      z-index: auto;
+      min-width: 14px !important;
+      height: 14px !important;
+      color: $primary-color;
+      font-size: 11px !important;
+      line-height: normal !important;
+      background: gainsboro !important;
+      cursor: pointer;
+    }
+  }
+
+  .plusIcon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+    height: 24px;
+    width: 24px;
+    svg {
+      height: 14px;
+      width: 16px;
+    }
+  }
+
+  .main {
+    min-height: 63%;
+    max-height: 63%;
+    overflow-y: auto;
+    scrollbar-width: none;
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+  }
+
+  .badge {
+    min-width: 68px;
+    padding: 1px 10px;
+    border: 1px solid $primary-color;
+    background-color: $light-primary;
+    border-radius: 54px;
+    font-size: 12px;
+    .center {
+      display: flex;
+    }
+    svg {
+      path {
+        fill: $dark-primary;
+      }
+    }
+  }
+
+  .color {
+    path {
+      fill: #a0a4b6;
+    }
+  }
+
+  .welcomeContent {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .buttonGroup {
+    margin-top: auto;
+  }
+
+  .btnWidth {
+    width: 100%;
+    height: 67px;
+    &:hover {
+      color: $logo-color !important;
+      background-color: $light-primary !important ;
+      border-color: $primary-color !important;
+    }
+  }
+
+  .unselected {
+    background-color: $chat-bg-light;
+    border-color: $auth-background;
+  }
+
+  .selected {
+    background-color: $light-primary;
+    border-color: $primary-color;
+  }
+
+  .footer {
+    width: 100%;
+    padding: 24px;
+  }
+}
+.collapseAiModal {
+  width: 0px;
+  .container {
+    display: none;
+  }
+  .main {
+    display: none;
+  }
+  .footer {
+    display: none;
+  }
+}
+.fullHeight {
+  height: 100vh !important;
+}
+
+.fullWidth {
+  width: 100%;
+}
+.card {
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: 0px 0px 16px 0px #e8eaf4;
+  padding: 2.4rem 2rem;
+}
+.textarea {
+  resize: none !important;
+}
+
+.headerItems {
+  background: red;
+  width: 100%;
+  align-items: center;
+}

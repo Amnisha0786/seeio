@@ -1,0 +1,51 @@
+@import "../../../theme/variables.module";
+
+.page {
+  display: flex;
+  flex-direction: column;
+
+  .logo {
+    align-self: center;
+    margin-bottom: 1.6rem;
+    width: 200px;
+    height: 90px;
+  }
+
+  .divider {
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+    .line {
+      height: 1px;
+      background-color: $gray-text;
+      width: 100%;
+      position: absolute;
+      top: 8px;
+    }
+
+    p {
+      background-color: white;
+      position: relative;
+      padding: 0 32px;
+    }
+  }
+
+  .iconButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    > img {
+      margin-right: 20px;
+    }
+  }
+
+  .signUpLink {
+    span {
+      color: $link-text;
+      cursor: pointer;
+      user-select: none;
+    }
+  }
+}

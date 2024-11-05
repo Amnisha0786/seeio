@@ -1,0 +1,30 @@
+@import "../../../../theme/variables.module";
+
+.page {
+  .tabBar {
+    background: #ECEFF2;
+    border-radius: 8px;
+    display: flex;
+    width: 600px;
+    height: 46px;
+    padding: 6px;
+
+    .tabBarItem {
+      border-radius: 8px;
+      flex: 1;
+      margin-right: 6px;
+      transition: background-color 0.2s;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &.active {
+        background-color: white;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}

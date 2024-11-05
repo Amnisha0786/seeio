@@ -1,0 +1,57 @@
+@import "../../../../theme/variables.module.scss";
+
+.page {
+  .color {
+    margin-left: 3px;
+    text-transform: capitalize;
+    color: $helping-text;
+  }
+  .sortSelect {
+    width: 180px;
+    height: 28px;
+    &::placeholder {
+      font-size: 12px !important;
+    }
+
+    :global .ant-select-selector {
+      border-radius: 4px;
+      padding: 0 10px !important;
+    }
+  }
+  .optionButton {
+    font-size: 20px;
+    color: $gray-text;
+  }
+  .card {
+    width: 100%;
+    min-height: 200px;
+    position: relative;
+    .overflow {
+      max-height: 190px;
+      overflow-y: auto;
+    }
+    .recordItem {
+      background: #f6f7fb;
+      border-radius: 15px;
+      height: 76px;
+      padding: 0 32px;
+      align-items: center;
+      display: flex;
+    }
+    .width {
+      width: 100%;
+    }
+    .textTransform {
+      color: $primary-color;
+      text-decoration: line-through;
+    }
+    .seeAll {
+      position: absolute;
+      bottom: 6px;
+      text-align: center;
+      padding: 6px;
+      background: white;
+      width: 94%;
+    }
+  }
+}

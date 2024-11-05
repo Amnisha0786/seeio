@@ -1,0 +1,145 @@
+@import '../../../../theme/variables.module';
+
+.page {
+  .subTitle {
+    color: $dark-gray-text;
+  }
+
+  .stepBar {
+    max-width: 770px;
+    width: 100%;
+  }
+
+  .bodyContent {
+    padding: 25px 25px 45px;
+    background-color: white;
+    box-shadow: 0px 0px 16px 0px #e8eaf4;
+    border-radius: 16px;
+
+    .divider {
+      height: 1px;
+      background-color: #eceff2;
+    }
+
+    .nextButton {
+      padding: 0 60px;
+    }
+
+    .labelBox {
+      height: 100%;
+    }
+
+    .addButton {
+      width: 44px;
+      height: 44px;
+      background-color: $primary-color;
+      border-radius: 22px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 22px;
+    }
+  }
+}
+
+.searchInput {
+  border-radius: 8px;
+  background-color: #f1f5f9;
+  width: 350px;
+  border: none;
+
+  > input {
+    background-color: #f1f5f9;
+  }
+
+  :global .ant-input-prefix {
+    color: #a0a4b6;
+    font-size: 20px;
+    margin-right: 10px;
+  }
+}
+
+.sortSelect {
+  width: 160px;
+
+  :global .ant-select-selector {
+    border-radius: 8px;
+    background-color: #f1f5f9 !important;
+    padding: 0 20px !important;
+    border: none !important;
+  }
+}
+
+.accordian {
+  .ant-collapse-header.div[aria-expanded='true'] {
+    background-color: green;
+  }
+}
+
+.accordian {
+  box-shadow: 0px 0px 16px 0px #e8eaf4;
+  border: none;
+  border-radius: 16px;
+  background-color: transparent;
+  :global .ant-collapse-header {
+    background-color: #fff;
+    border-radius: 16px 16px 0 0;
+    align-items: center !important;
+  }
+  :global .ant-collapse-item-active .ant-collapse-header-text span {
+    color: var(--Green, $primary-color);
+  }
+  :global .ant-collapse-content {
+    background-color: transparent;
+  }
+  :global .ant-collapse-content {
+    border-top: 0;
+  }
+  :global .ant-collapse-item {
+    border: none;
+  }
+}
+
+.w_100 {
+  width: 100%;
+}
+
+.w_50 {
+  width: 50%;
+}
+.stepTWO {
+  color: #797e92;
+}
+.accordian .tableaddCompany {
+  background-color: transparent;
+  box-shadow: none;
+  .searchInput {
+    background-color: #fff;
+    border: none;
+    border-radius: 16px;
+    input {
+      background-color: #fff;
+    }
+  }
+}
+
+.officertitle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.iconSize {
+  svg {
+    width: 15px;
+    height: 14px;
+  }
+  path {
+    fill: #aaa;
+  }
+}

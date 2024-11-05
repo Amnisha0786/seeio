@@ -1,0 +1,13 @@
+@import '../../theme/variables.module';
+
+.addButton {
+  width: 44px;
+  height: 44px;
+  background-color: $primary-color;
+  border-radius: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 22px;
+}

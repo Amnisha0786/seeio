@@ -1,0 +1,20 @@
+@import "../../../../../theme/variables.module";
+
+.page {
+  .contentBody {
+    padding: 32px;
+    background-color: white;
+    box-shadow: 0px 0px 16px 0px #E8EAF4;
+    border-radius: 16px;
+
+    .divider {
+      background-color: #ECEFF2;
+      height: 1px;
+      width: 100%;
+    }
+
+    .avatar {
+      border-radius: 50%;
+    }
+  }
+}

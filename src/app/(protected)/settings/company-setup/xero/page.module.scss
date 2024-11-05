@@ -1,0 +1,39 @@
+@import '../../../../../theme/variables.module';
+
+.page {
+  .contentBody {
+    padding: 32px;
+    background-color: white;
+    box-shadow: 0px 0px 16px 0px #e8eaf4;
+    border-radius: 16px;
+
+    .divider {
+      background-color: #eceff2;
+      height: 1px;
+      width: 100%;
+    }
+  }
+}
+.logoIcons {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+}
+
+.connectBtn {
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  color: #fff;
+  background-color: #9fc33c;
+}
+
+.quickBooks {
+  border-bottom: 2px solid #f7f8f7;
+  padding-bottom: 2rem;
+}
+.xero {
+  padding-top: 2rem;
+}

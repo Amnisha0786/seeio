@@ -1,0 +1,22 @@
+@import "../../theme/variables.module";
+
+.container {
+  max-width: 1140px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 100%;
+
+  @include lessThan($sc-size-xl) {
+    max-width: 1140px;
+  }
+  @include lessThan($sc-size-lg) {
+    max-width: 720px;
+  }
+  @include lessThan($sc-size-md) {
+    max-width: 540px;
+  }
+  @include lessThan($sc-size-sm) {
+    max-width: initial;
+  }
+}
